@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/categories")
-@CrossOrigin(origins = "*") // ✅ FIXED
+@CrossOrigin(origins = "https://fsadfinalfrontend.vercel.app")
 public class CategoryController {
 
     @Autowired

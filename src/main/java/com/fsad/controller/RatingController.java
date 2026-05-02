@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/ratings")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://fsadfinalfrontend.vercel.app")
 public class RatingController {
 
     @Autowired

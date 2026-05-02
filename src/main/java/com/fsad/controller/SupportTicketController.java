@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/support")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://fsadfinalfrontend.vercel.app")
 public class SupportTicketController {
 
     @Autowired

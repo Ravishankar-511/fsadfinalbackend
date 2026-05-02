@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/userapi")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://fsadfinalfrontend.vercel.app")
 public class UserController {
 
     @Autowired

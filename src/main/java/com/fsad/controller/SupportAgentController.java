@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/supportapi")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://fsadfinalfrontend.vercel.app")
 public class SupportAgentController {
 
     @Autowired
