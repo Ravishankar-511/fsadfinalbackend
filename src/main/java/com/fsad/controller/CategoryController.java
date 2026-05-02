@@ -22,7 +22,12 @@ public class CategoryController {
 
     @GetMapping
     public List<Category> getAllCategories() {
-        return categoryService.getAllCategories();
+        try {
+            return categoryService.getAllCategories();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return List.of(); // prevents crash
+        }
     }
 
     @DeleteMapping("/{id}")
