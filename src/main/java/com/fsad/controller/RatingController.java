@@ -22,11 +22,17 @@ public class RatingController {
 
     @GetMapping("/professional/{name}")
     public List<Rating> getRatingsForProfessional(@PathVariable String name) {
+        if (name == null || name.isEmpty()) {
+            throw new RuntimeException("Professional name is missing");
+        }
         return service.getRatingsForProfessional(name);
     }
 
     @GetMapping("/user/{name}")
     public List<Rating> getRatingsForUser(@PathVariable String name) {
+        if (name == null || name.isEmpty()) {
+            throw new RuntimeException("User name is missing");
+        }
         return service.getRatingsForUser(name);
     }
 }
